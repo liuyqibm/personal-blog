@@ -1,0 +1,105 @@
+
+/* 浏览器兼容性样式 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.blur-effect {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.filter-effect {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.article {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    color: #35424a;
+}
+
+.footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.App {
+    min-height: 100vh;
+    /* 方案1：完全覆盖 */
+    background: url('../assets/images/2.jpg') no-repeat center center fixed;
+    background-size: cover;
+  
+    /* 方案2：保持原始比例 */
+    /*
+    background: url('../assets/images/1.jpg') no-repeat center center;
+    background-size: contain;
+    */
+  
+    /* 方案3：自定义大小 */
+    /*
+    background: url('../assets/images/1.jpg') no-repeat center center;
+    background-size: 80% 80%;
+    */
+  
+    /* 方案4：平铺显示 */
+    /*
+    background: url('../assets/images/1.jpg') repeat;
+    background-size: 300px 300px;
+    */
+  }
