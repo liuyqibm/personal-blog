@@ -29,7 +29,9 @@ jobs:
     - name: Build Frontend
       run: |
         cd frontend
-        npm install
+        npm ci
+        chmod +x ./node_modules/.bin/vite  # 添加执行权限
+        npx vite --version  # 检查 vite 是否可用
         npm run build
 
     # 设置 Java 环境
